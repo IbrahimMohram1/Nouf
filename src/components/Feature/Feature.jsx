@@ -65,7 +65,7 @@ export default function Feature() {
                 className="p-4 rounded-lg shadow-md custom-gradient-header "
               >
                 <div className="flex flex-col items-center justify-center text-center ">
-                  <div className="text-[#19719D] text-4xl my-3">
+                  <div className="text-[#136d8b] opacity-75 text-4xl my-3">
                     {item.icon}
                   </div>
                   <h2 className="text-xl font-semibold text-gray-400 ">

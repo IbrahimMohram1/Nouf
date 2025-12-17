@@ -4,12 +4,12 @@ import img from "../../assets/images/iPhone.png";
 export default function Home() {
   return (
     <>
-      <div className="w-3/4 mx-auto text-center ">
+      <div className="w-3/4 mx-auto text-center h-screen ">
         <div className="flex flex-col justify-center items-center  h-full text-white">
           <span className="  rounded-full text-gray-400 p-3 custom-gradient-header">
             Voice-First, Business-Ready
           </span>
-          <h1 className="md:text-7xl text-3xl text-wrap font-medium mt-6">
+          <h1 className="md:text-5xl text-3xl text-wrap font-bold mt-6 md:w-3/4 md">
             Deliver instant AI-powered voice experiences to your customers
           </h1>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl">
@@ -23,7 +23,7 @@ export default function Home() {
           </button>
           <div className="w-full mt-5">
             <div className="text-center mx-auto overflow-hidden mt-6 background-overlay ">
-              <img src={img} className="w-3/12 m-auto" />
+              <img src={img} className="w-2/12 m-auto" />
             </div>
           </div>
         </div>
