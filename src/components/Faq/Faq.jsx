@@ -1,59 +1,23 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FaArrowDown } from "react-icons/fa";
 import { IoChevronUp } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Faq() {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
   const Istoggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-  const items = [
-    {
-      title: "Does the solution support multiple languages and dialects... ?",
-      content: (
-        <>
-          <p className="mb-2 text-body">
-            Yes. Our system provides a lightweight API and SDKs that can be
-            integrated into websites, mobile apps, and e-commerce platforms with
-            minimal development effort
-          </p>
-        </>
-      ),
-    },
-    {
-      title:
-        "Is the voice assistant easy to integrate into our existing platform ?",
-      content: (
-        <>
-          <p className="mb-2 text-body">
-            Yes. Our system provides a lightweight API and SDKs that can be
-            integrated into websites, mobile apps, and e-commerce platforms with
-            minimal development effort
-          </p>
-        </>
-      ),
-    },
-    {
-      title: "Is voice data stored or processed securely ...?",
-      content: (
-        <>
-          <p className="mb-2 text-body">
-            Yes. Our system provides a lightweight API and SDKs that can be
-            integrated into websites, mobile apps, and e-commerce platforms with
-            minimal development effort
-          </p>
-        </>
-      ),
-    },
-  ];
+  const items = t("faq.items", { returnObjects: true });
 
   return (
     <>
       <div className="w-3/4 mx-auto my-12">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-[#19719D] to-[#092837] bg-clip-text text-transparent">
-          FAQ’s
+          {t("faq.title")}
         </h2>
         <div>
           <div className="rounded-base  overflow-hidden shadow-xs my-12 text-white custom-gradient-header">

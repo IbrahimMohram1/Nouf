@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaUnlockAlt } from "react-icons/fa";
 import { FaCodeFork } from "react-icons/fa6";
@@ -7,61 +8,19 @@ import { LuBrain } from "react-icons/lu";
 import { SiGoogleanalytics } from "react-icons/si";
 
 export default function Feature() {
-  let data = [
-    {
-      id: 1,
-      icon: <FaCodeFork />,
-      title: "Plug-and-Play API",
-      span: "Integrate Nouf  ",
-      desc: " in minutes, no complex setup. Works seamlessly with web and mobile apps instantly.",
-    },
-    {
-      id: 2,
-      icon: <IoIosPeople />,
-      title: "Accurate Speech Recognition",
-      span: "Understands",
-      desc: " Arabic & English clearly for every customer",
-    },
-    {
-      id: 3,
-      icon: <LuBrain />,
-      title: "Intent-Based AI",
-      span: "Recognizes",
-      desc: " what users mean, not just the words they say",
-    },
-    {
-      id: 4,
-      icon: <FaUnlockAlt />,
-      title: "Enterprise-Grade Security",
-      span: "Protects",
-      desc: " user data with full encryption and compliance",
-    },
-    {
-      id: 5,
-      icon: <AiOutlineGlobal />,
-      title: "Easy Customization",
-      span: "Integrate Nouf",
-      desc: " in minutes, no complex setup. Works seamlessly with web and mobile apps instantly.",
-    },
-    {
-      id: 6,
-      icon: <SiGoogleanalytics />,
-      title: "Scalable & Reliable",
-      span: "Track",
-      desc: " interactions, engagement, and conversions easily",
-    },
-  ];
+  const { t } = useTranslation();
+  const items = t("features.items", { returnObjects: true });
   return (
     <>
       <div>
         <h1 className="text-5xl font-semibold text-primary-gradient text-center my-12">
-          Features & Tech
+          {t("features.title")}
         </h1>
         <div className="w-3/4 mx-auto my-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-            {data.map((item) => (
+            {items.map((item, idx) => (
               <div
-                key={item.id}
+                key={idx}
                 className="p-4 rounded-lg shadow-md custom-gradient-header "
               >
                 <div className="flex flex-col items-center justify-center text-center ">

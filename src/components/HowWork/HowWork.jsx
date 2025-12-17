@@ -4,42 +4,41 @@ import { FaRegLightbulb } from "react-icons/fa";
 import { FaRegMessage } from "react-icons/fa6";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { LuPackage } from "react-icons/lu";
+import { useTranslation } from "react-i18next";
+const savedLng = localStorage.getItem("language") || "en";
 
 export default function HowWork() {
+  const { t } = useTranslation();
   const data = [
     {
       icon: <CiMicrophoneOn />,
-      title: "Press the Mic",
-      description:
-        "Simply tap the microphone button to start your voice search instantly",
+      title: t("how.steps.0.title"),
+      description: t("how.steps.0.description"),
     },
     {
       icon: <FaRegMessage />,
-      title: "Say What You're Looking For",
-      description:
-        "Speak naturally – whether it's a product name, category, or description. Your voice understands",
+      title: t("how.steps.1.title"),
+      description: t("how.steps.1.description"),
     },
     {
       icon: <FaRegLightbulb />,
-      title: "Nouf Understands",
-      description: "Smart voice understanding your request",
+      title: t("how.steps.2.title"),
+      description: t("how.steps.2.description"),
     },
     {
       icon: <BsFillUnlockFill />,
-      title: "Get Smart Suggestions",
-      description: "Get AI-personalized suggestions",
+      title: t("how.steps.3.title"),
+      description: t("how.steps.3.description"),
     },
     {
       icon: <IoIosHelpCircleOutline />,
-      title: "Refine with Simple Questions",
-      description:
-        "Answer a few quick questions if you want to specify more, clear, or rating",
+      title: t("how.steps.4.title"),
+      description: t("how.steps.4.description"),
     },
     {
       icon: <LuPackage />,
-      title: "Choose & Buy",
-      description:
-        "Select the best product and add to it's your cart effortlessly",
+      title: t("how.steps.5.title"),
+      description: t("how.steps.5.description"),
     },
   ];
 
@@ -48,7 +47,7 @@ export default function HowWork() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-primary-gradient">
-            How it Works..?
+            {t("how.title")}
           </h1>
         </div>
 
@@ -67,14 +66,18 @@ export default function HowWork() {
                     {isEven ? (
                       <>
                         {/* Icon  of Left Side */}
-                        <div className="w-1/2 pr-8 flex justify-end ">
+                        <div className="w-1/2 pr-8 flex justify-center ">
                           <div className="icon-gradient text-3xl">
                             {item.icon}
                           </div>
                         </div>
 
                         {/* Content Card on Right */}
-                        <div className="w-1/2 pl-8">
+                        <div
+                          className={`w-1/2 ${
+                            savedLng === "ar" ? "ps-8" : "pl-8"
+                          }`}
+                        >
                           <h3 className="text-xl font-bold text-white mb-2">
                             {item.title}
                           </h3>
@@ -86,7 +89,11 @@ export default function HowWork() {
                     ) : (
                       <>
                         {/* Content Card on Left */}
-                        <div className="w-1/2 pr-8">
+                        <div
+                          className={`w-1/2 ${
+                            savedLng === "ar" ? "pe-8" : "pl-8"
+                          }`}
+                        >
                           <h3 className="text-xl font-bold text-white mb-2">
                             {item.title}
                           </h3>
@@ -94,7 +101,11 @@ export default function HowWork() {
                         </div>
 
                         {/* Icon  of Right Side */}
-                        <div className="w-1/2 pl-8 flex justify-start">
+                        <div
+                          className={`w-1/2 ${
+                            savedLng === "ar" ? "ps-8" : "pl-8"
+                          }`}
+                        >
                           <div>
                             <div className=" icon-gradient text-3xl">
                               {item.icon}

@@ -1,22 +1,21 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import img from "../../assets/images/Vector.png";
 import { SiSpeedypage } from "react-icons/si";
 export default function SubHeader() {
+  const { t } = useTranslation();
   let data = [
-    { id: 1, title: "Logoipsum", image: <SiSpeedypage /> },
-    { id: 2, title: "Logoipsum", image: <SiSpeedypage /> },
-
-    { id: 3, title: "Logoipsum", image: <SiSpeedypage /> },
-
-    { id: 4, title: "Logoipsum", image: <SiSpeedypage /> },
-    { id: 5, title: "Logoipsum", image: <SiSpeedypage /> },
+    { id: 1, title: t("subheader.logo"), image: <SiSpeedypage /> },
+    { id: 2, title: t("subheader.logo"), image: <SiSpeedypage /> },
+    { id: 3, title: t("subheader.logo"), image: <SiSpeedypage /> },
+    { id: 4, title: t("subheader.logo"), image: <SiSpeedypage /> },
+    { id: 5, title: t("subheader.logo"), image: <SiSpeedypage /> },
   ];
   return (
     <>
       <div className="my-8">
         <p className="text-gray-400 text-center mt-12">
-          160,000+ customers in over 120 countries grow their businesses with
-          Nouf
+          {t("subheader.customers")}
         </p>
         {/* logos */}
         <div className="w-1/2 mx-auto">

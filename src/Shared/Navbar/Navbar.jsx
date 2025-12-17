@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -10,6 +13,7 @@ export default function Navbar() {
           <div>
             <img className="w-3/4" src={logo} alt="Logo" />
           </div>
+
           <button
             onClick={() => setIsOpen(!isOpen)}
             data-collapse-toggle="navbar-default"
@@ -49,30 +53,33 @@ export default function Navbar() {
                   href="#"
                   className="block py-2 px-3 text-heading custom-gradient-header rounded-2xl  "
                 >
-                  Home
+                  {t("nav.home")}
                 </a>
               </li>
               <li>
                 <a href="#" className="block py-2 px-3 text-heading  ">
-                  Features
+                  {t("nav.features")}
                 </a>
               </li>
               <li>
                 <a href="#" className="block py-2 px-3 text-heading  ">
-                  About
+                  {t("nav.about")}
                 </a>
               </li>
               <li>
                 <a href="#" className="block py-2 px-3 text-heading  ">
-                  Platforms
+                  {t("nav.platforms")}
                 </a>
               </li>
               <li>
                 <a href="#" className="block py-2 px-3 text-heading  ">
-                  Testimonials
+                  {t("nav.testimonials")}
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="">
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>

@@ -1,0 +1,176 @@
+{
+  "home": {
+    "tagline": "Voice-First, Business-Ready",
+    "title": "Deliver instant AI-powered voice experiences to your customers",
+    "description": "Nouf is an AI Voice Agent that lets your users order, ask, or interact with your service using natural conversation — fully integrated with your platform in minutes.",
+    "button": "Get Started"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "platforms": "Platforms",
+    "testimonials": "Testimonials"
+  },
+  "how": {
+    "title": "How it Works..?",
+    "steps": [
+      {
+        "title": "Press the Mic",
+        "description": "Simply tap the microphone button to start your voice search instantly"
+      },
+      {
+        "title": "Say What You're Looking For",
+        "description": "Speak naturally – whether it's a product name, category, or description. Your voice understands"
+      },
+      {
+        "title": "Nouf Understands",
+        "description": "Smart voice understanding your request"
+      },
+      {
+        "title": "Get Smart Suggestions",
+        "description": "Get AI-personalized suggestions"
+      },
+      {
+        "title": "Refine with Simple Questions",
+        "description": "Answer a few quick questions if you want to specify more, clear, or rating"
+      },
+      {
+        "title": "Choose & Buy",
+        "description": "Select the best product and add to it's your cart effortlessly"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ’s",
+    "items": [
+      {
+        "title": "Does the solution support multiple languages and dialects... ?",
+        "content": "Yes. Our system provides a lightweight API and SDKs that can be integrated into websites, mobile apps, and e-commerce platforms with minimal development effort"
+      },
+      {
+        "title": "Is the voice assistant easy to integrate into our existing platform ?",
+        "content": "Yes. Our system provides a lightweight API and SDKs that can be integrated into websites, mobile apps, and e-commerce platforms with minimal development effort"
+      },
+      {
+        "title": "Is voice data stored or processed securely ...?",
+        "content": "Yes. Our system provides a lightweight API and SDKs that can be integrated into websites, mobile apps, and e-commerce platforms with minimal development effort"
+      }
+    ]
+  },
+  "features": {
+    "title": "Features & Tech",
+    "items": [
+      {
+        "title": "Plug-and-Play API ",
+        "span": "Integrate Nouf ",
+        "desc": "in minutes, no complex setup. Works seamlessly with web and mobile apps instantly."
+      },
+      {
+        "title": "Accurate Speech Recognition",
+        "span": "Understands",
+        "desc": "Arabic & English clearly for every customer"
+      },
+      {
+        "title": "Intent-Based AI ",
+        "span": "Recognizes ",
+        "desc": "what users mean, not just the words they say"
+      },
+      {
+        "title": "Enterprise-Grade Security",
+        "span": "Protects",
+        "desc": "user data with full encryption and compliance"
+      },
+      {
+        "title": "Easy Customization",
+        "span": "Integrate Nouf",
+        "desc": "in minutes, no complex setup. Works seamlessly with web and mobile apps instantly."
+      },
+      {
+        "title": "Scalable & Reliable",
+        "span": "Track",
+        "desc": "interactions, engagement, and conversions easily"
+      }
+    ]
+  },
+  "sales": {
+    "tagline": "Smart Cross-Selling",
+    "title": "Turn Every Conversation into Extra Sales!",
+    "description": "Nouf listens to customers, understands their needs, and suggests additional products automatically."
+  },
+  "subheader": {
+    "customers": "160,000+ customers in over 120 countries grow their businesses with Nouf",
+    "logo": "Logoipsum"
+  },
+  "benefits": {
+    "title": "Benefits",
+    "items": [
+      {
+        "span": "Higher ",
+        "title": " Conversion Rates ",
+        "desc": "When customers find products faster through voice, they complete purchases more often — boosting your overall sales."
+      },
+      {
+        "span": "Faster ",
+        "title": " Product Discovery ",
+        "desc": "Nouf helps users reach the right product in seconds, reducing drop-offs caused by long searches or complicated filters."
+      },
+      {
+        "span": "Plug-Play ",
+        "title": " Integration ",
+        "desc": "Voice search makes shopping smoother, more intuitive, more accessible — especially for users who struggle with typing or don’t know product names."
+      },
+      {
+        "span": "Higher ",
+        "title": " Conversion Rates ",
+        "desc": "Add Nouf to your store with a simple script. No technical setup, no development time — just plug it in and start using it."
+      },
+      {
+        "span": " Smart",
+        "title": " Insights ",
+        "desc": "Gain valuable data about what users are asking for, popular voice queries, and customer intent — helping you improve products and increase store efficiency."
+      }
+    ]
+  },
+  "footer": {
+    "about": "About Nouf",
+    "aboutLinks": [
+      "Company Overview",
+      "Careers",
+      "Press & Media",
+      "Testimonials"
+    ],
+    "resources": "Resources",
+    "resourcesLinks": [
+      "Blog",
+      "Help Center",
+      "Webinars & Events",
+      "Case Studies"
+    ],
+    "support": "Support & Contact",
+    "supportLinks": [
+      "Contact Us",
+      "Technical Support",
+      "Feedback",
+      "Community Forum"
+    ],
+    "connect": "Connect",
+    "connectLinks": ["Instagram", "Facebook", "Twitter / X", "LinkedIn"],
+    "copyright": "©2026 Nouf • All rights reserved",
+    "terms": ["Term of use", "Privacy policy", "Security"]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "heading": "Free Integration. Pay Only Per Call.",
+    "description": "We integrate the full voice-agent system for free — no setup fees or contracts.",
+    "price": "1 SAR",
+    "perCall": "per call",
+    "upto": "Up to 5 minutes per call",
+    "bullets": [
+      "AI Voice Automation",
+      "Zero Setup Fees",
+      "Scales With Your Traffic"
+    ],
+    "button": "Contact Us"
+  }
+}

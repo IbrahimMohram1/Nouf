@@ -1,37 +1,34 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { GiStarFormation } from "react-icons/gi";
 import img from "../../assets/images/mobile2.png";
 import img2 from "../../assets/images/mobile.png";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Sales() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="w-3/4 mx-auto">
         <div className="text-center mx-auto flex justify-center items-center gap-y-4 flex-col text-white">
           <span className="flex gap-x-2 custom-gradient  w-fit justify-center items-center ">
             <GiStarFormation />
-            Smart Cross-Selling
+            {t("sales.tagline")}
           </span>
-          <h2 className="text-4xl font-semibold">
-            Turn Every Conversation into Extra Sales!{" "}
-          </h2>
-          <p className=" text-wrap w-1/2 mx-auto">
-            Nouf listens to customers, understands their needs, and suggests
-            additional products automatically.
-          </p>
+          <h2 className="text-4xl font-semibold">{t("sales.title")}</h2>
+          <p className=" text-wrap w-1/2 mx-auto">{t("sales.description")}</p>
         </div>
 
-        <div className="flex justify-center flex-wrap items-start text-white ">
+        <div className="flex justify-center flex-wrap items-start text-white mt-8 ">
           <div className="md:w-1/2 w-full contents  ">
-            <img className="w-96" src={img} alt="" />
+            <img className="w-72" src={img} alt="" />
           </div>
           <div className="bg-[#19719D] p-5 rounded-full md:mt-16 mx-8 my-4">
             <FaArrowRight />
           </div>
           <div className="md:w-1/2 w-full contents ">
             <img
-              className="w-96
+              className="w-72
 "
               src={img2}
               alt=""
