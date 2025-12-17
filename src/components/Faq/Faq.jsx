@@ -65,13 +65,13 @@ export default function Faq() {
                   onClick={() => Istoggle(index)}
                 >
                   <MdKeyboardArrowDown
-                    className={`w-5 h-5 shrink-0 transition-transform duration-300 text-blue-300 text-3xl ${
+                    className={`w-5 h-5 shrink-0 transition-transform duration-300 text-[#19719D] text-3xl ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   />
                   <span
                     className={`flex-1 text-left text-xl font-semibold ${
-                      openIndex === index ? "text-blue-400" : "text-white"
+                      openIndex === index ? "text-[#19719D]" : "text-white"
                     }`}
                   >
                     {item.title}

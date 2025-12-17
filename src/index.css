@@ -31,3 +31,24 @@ body {
     inset 0 0 0 1px rgba(255, 255, 255, 0.08);
   border-radius: 20px;
 }
+
+:root {
+  --primary-color: linear-gradient(45deg, #19719d 61.54%, #092837 100%);
+}
+.bg-primary-gradient {
+  background: var(--primary-color) !important;
+}
+.text-primary-gradient {
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-primary-gradient svg {
+  fill: currentColor;
+}
+.icon-gradient {
+  color: #19719d;
+}

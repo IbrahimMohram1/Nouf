@@ -54,7 +54,7 @@ export default function Feature() {
   return (
     <>
       <div>
-        <h1 className="text-5xl font-semibold text-blue-500 text-center my-12">
+        <h1 className="text-5xl font-semibold text-primary-gradient text-center my-12">
           Features & Tech
         </h1>
         <div className="w-3/4 mx-auto my-12">
@@ -65,7 +65,9 @@ export default function Feature() {
                 className="p-4 rounded-lg shadow-md custom-gradient-header "
               >
                 <div className="flex flex-col items-center justify-center text-center ">
-                  <div className="text-blue-500 text-4xl my-3">{item.icon}</div>
+                  <div className="text-[#19719D] text-4xl my-3">
+                    {item.icon}
+                  </div>
                   <h2 className="text-xl font-semibold text-gray-400 ">
                     {item.title}
                   </h2>

@@ -59,7 +59,7 @@ export default function Benfits() {
               className="p-4 custom-gradient-header   border-gray-300 rounded-lg shadow-md w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
             >
               <div className="flex flex-col items-start justify-end  ">
-                <div className="text-blue-500 text-4xl my-3">{item.icon}</div>
+                <div className="text-[#19719D] text-4xl my-3">{item.icon}</div>
                 <h2 className="text-xl font-semibold text-gray-400 ">
                   <span className="text-white"> {item.span}</span>
                   {item.title}

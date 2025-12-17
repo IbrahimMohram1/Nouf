@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <nav className=" w-3/4 mx-auto z-20 top-0 start-0 border-b border-default">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
           <div>
-            <img className="w-3/4" src={logo} alt="Logo" srcset="" />
+            <img className="w-3/4" src={logo} alt="Logo" />
           </div>
           <button
+            onClick={() => setIsOpen(!isOpen)}
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+            className="inline-flex text-white items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -33,7 +36,13 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div
+            className={`${
+              isOpen ? "block" : "hidden"
+            } w-full md:block md:w-auto`}
+            id="navbar-default"
+          >
+            {" "}
             <ul className="font-normal flex flex-col p-4 md:p-0   md:flex-row md:space-x-8 text-white ">
               <li>
                 <a

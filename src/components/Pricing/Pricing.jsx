@@ -18,27 +18,27 @@ export default function Pricing() {
               We integrate the full voice-agent system for free — no setup fees
               or contracts.
             </p>
-            <p className="text-blue-400 text-2xl">
+            <p className="text-[#19719D] text-2xl">
               <span className="text-3xl font-semibold ">1 SAR </span> per call
             </p>
             <p className="text-gray-400">Up to 5 minutes per call</p>
             <ul>
               <li>
                 <div className="flex  gap-x-3">
-                  <MdKeyboardVoice className="text-blue-400 text-2xl" />
+                  <MdKeyboardVoice className="text-[#19719D] text-2xl" />
                   <span>AI Voice Automation</span>
                 </div>
               </li>
               <li>
                 <div className="flex gap-x-3">
-                  <MdElectricBolt className="text-blue-400 text-2xl" />
+                  <MdElectricBolt className="text-[#19719D] text-2xl" />
 
                   <span>Zero Setup Fees</span>
                 </div>
               </li>
               <li>
                 <div className="flex gap-x-3 ">
-                  <IoAnalyticsOutline className="text-blue-400 text-2xl" />
+                  <IoAnalyticsOutline className="text-[#19719D] text-2xl" />
                   <span>Scales With Your Traffic</span>
                 </div>
               </li>

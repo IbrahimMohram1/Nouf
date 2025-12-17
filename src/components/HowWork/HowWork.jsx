@@ -44,22 +44,21 @@ export default function HowWork() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white py-20 px-4">
+    <div className="min-h-screen text-white py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-gradient">
             How it Works..?
           </h1>
         </div>
 
         <div className="relative">
           {/* Vertical Center Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-blue-500"></div>
+          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#19719D]"></div>
 
           {/* data */}
           <div className="space-y-16">
             {data.map((item, index) => {
-              const Icon = item.icon;
               const isEven = index % 2 === 0;
 
               return (
@@ -68,8 +67,8 @@ export default function HowWork() {
                     {isEven ? (
                       <>
                         {/* Icon  of Left Side */}
-                        <div className="w-1/2 pr-8 flex justify-end">
-                          <div className="text-blue-500 text-3xl">
+                        <div className="w-1/2 pr-8 flex justify-end ">
+                          <div className="icon-gradient text-3xl">
                             {item.icon}
                           </div>
                         </div>
@@ -91,15 +90,15 @@ export default function HowWork() {
                           <h3 className="text-xl font-bold text-white mb-2">
                             {item.title}
                           </h3>
-                          <p className="text-slate-400 text-sm">
-                            {item.description}
-                          </p>
+                          <p className="text-sm ">{item.description}</p>
                         </div>
 
                         {/* Icon  of Right Side */}
                         <div className="w-1/2 pl-8 flex justify-start">
-                          <div className="text-blue-500 text-3xl">
-                            {item.icon}
+                          <div>
+                            <div className=" icon-gradient text-3xl">
+                              {item.icon}
+                            </div>
                           </div>
                         </div>
                       </>

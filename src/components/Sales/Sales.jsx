@@ -24,9 +24,9 @@ export default function Sales() {
 
         <div className="flex justify-center flex-wrap items-start text-white ">
           <div className="md:w-1/2 w-full contents  ">
-            <img className="w-96" src={img} alt="" srcset="" />
+            <img className="w-96" src={img} alt="" />
           </div>
-          <div className="bg-cyan-800 p-5 rounded-full md:mt-16 mx-8 my-4">
+          <div className="bg-[#19719D] p-5 rounded-full md:mt-16 mx-8 my-4">
             <FaArrowRight />
           </div>
           <div className="md:w-1/2 w-full contents ">
@@ -35,7 +35,6 @@ export default function Sales() {
 "
               src={img2}
               alt=""
-              srcset=""
             />
           </div>
         </div>
