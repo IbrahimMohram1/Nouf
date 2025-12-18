@@ -46,8 +46,7 @@ export default function Navbar() {
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            {" "}
-            <ul className="font-normal flex flex-col justify-center items-center p-4 md:p-0  md:flex-row md:space-x-8 text-white ">
+            <ul className="font-normal flex flex-col  p-4 md:p-0  md:flex-row md:space-x-8 text-white ">
               <li>
                 <a
                   onClick={() => setIsOpen(false)}
@@ -93,7 +92,7 @@ export default function Navbar() {
                   {t("nav.testimonials")}
                 </a>
               </li>
-              <li className="pt-1">
+              <li className="">
                 <LanguageSwitcher />
               </li>
             </ul>
