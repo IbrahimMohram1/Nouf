@@ -8,8 +8,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className=" w-3/4 mx-auto z-20 top-0 start-0 border-b border-default">
-        <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className=" w-3/4 mx-auto z-20  ">
+        <div className=" flex flex-wrap items-center justify-between  p-4">
           <div>
             <img className="w-3/4" src={logo} alt="Logo" />
           </div>
@@ -47,39 +47,56 @@ export default function Navbar() {
             id="navbar-default"
           >
             {" "}
-            <ul className="font-normal flex flex-col p-4 md:p-0   md:flex-row md:space-x-8 text-white ">
+            <ul className="font-normal flex flex-col justify-center items-center p-4 md:p-0  md:flex-row md:space-x-8 text-white ">
               <li>
                 <a
-                  href="#"
+                  onClick={() => setIsOpen(false)}
+                  href="#home"
                   className="block py-2 px-3 text-heading custom-gradient-header rounded-2xl  "
                 >
                   {t("nav.home")}
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-heading  ">
+                <a
+                  onClick={() => setIsOpen(false)}
+                  href="#features"
+                  className="block py-2 px-3 text-heading  "
+                >
                   {t("nav.features")}
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-heading  ">
+                <a
+                  onClick={() => setIsOpen(false)}
+                  href="#about"
+                  className="block py-2 px-3 text-heading  "
+                >
                   {t("nav.about")}
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-heading  ">
+                <a
+                  onClick={() => setIsOpen(false)}
+                  href="#platforms"
+                  className="block py-2 px-3 text-heading  "
+                >
                   {t("nav.platforms")}
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-heading  ">
+                <a
+                  onClick={() => setIsOpen(false)}
+                  href="#testimonials"
+                  className="block py-2 px-3 text-heading  "
+                >
                   {t("nav.testimonials")}
                 </a>
               </li>
+              <li className="pt-1">
+                <LanguageSwitcher />
+              </li>
             </ul>
-          </div>
-          <div className="">
-            <LanguageSwitcher />
           </div>
         </div>
       </nav>

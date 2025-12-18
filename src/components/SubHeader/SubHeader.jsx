@@ -1,15 +1,22 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import img from "../../assets/images/Vector.png";
 import { SiSpeedypage } from "react-icons/si";
+import img from "../../assets/images/LogoSub.png";
+import img1 from "../../assets/images/LogoSub2.png";
+import img2 from "../../assets/images/LogoSub3.png";
+import img3 from "../../assets/images/LogoSub4.png";
+import img4 from "../../assets/images/LogoSub5.png";
+import img5 from "../../assets/images/LogoSub6.png";
+
 export default function SubHeader() {
   const { t } = useTranslation();
   let data = [
-    { id: 1, title: t("subheader.logo"), image: <SiSpeedypage /> },
-    { id: 2, title: t("subheader.logo"), image: <SiSpeedypage /> },
-    { id: 3, title: t("subheader.logo"), image: <SiSpeedypage /> },
-    { id: 4, title: t("subheader.logo"), image: <SiSpeedypage /> },
-    { id: 5, title: t("subheader.logo"), image: <SiSpeedypage /> },
+    { id: 1, image: img },
+    { id: 3, image: img2 },
+    { id: 2, image: img1 },
+    { id: 4, image: img3 },
+    { id: 5, image: img4 },
+    { id: 6, image: img5 },
   ];
   return (
     <>
@@ -19,16 +26,12 @@ export default function SubHeader() {
         </p>
         {/* logos */}
         <div className="w-1/2 mx-auto">
-          <div className="flex justify-center items-center mt-6 gap-x-16 gap-y-4  flex-wrap text-white">
+          <div className="flex justify-center items-center mt-6  gap-x-8 gap-y-4  flex-wrap text-white">
             {data.map((item) => (
-              <div
-                key={item.id}
-                className="flex justify-center items-center gap-x-2 text-xl"
-              >
-                <div className="text-black bg-gray-400 p-3 rounded-full">
-                  {item.image}
+              <div key={item.id} className="flex justify-center  items-center ">
+                <div className="">
+                  <img className="w-36" src={item.image} alt="" srcset="" />
                 </div>
-                <p>{item.title}</p>
               </div>
             ))}
           </div>

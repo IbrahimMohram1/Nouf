@@ -6,7 +6,7 @@ export default function Home() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-3/4 mx-auto text-center h-screen ">
+      <div id="home" className="w-3/4 mx-auto text-center h-screen ">
         <div className="flex flex-col justify-center items-center  h-full text-white">
           <span className="  rounded-full text-gray-400 p-3 custom-gradient-header">
             {t("home.tagline")}

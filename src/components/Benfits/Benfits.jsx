@@ -11,7 +11,7 @@ export default function Benfits() {
   const data = t("benefits.items", { returnObjects: true });
   return (
     <>
-      <div className="w-3/4 mx-auto my-16">
+      <div id="platforms" className="w-3/4 mx-auto my-16">
         <div className="flex justify-start items-center">
           <img className="w-32" src={img} />
           <h2 className="text-4xl font-bold bg-gradient-to-r from-[#19719D] to-[#092837] bg-clip-text text-transparent">
@@ -27,7 +27,10 @@ export default function Benfits() {
               <div className="flex flex-col items-start justify-end  ">
                 <div className="text-[#19719D] text-4xl my-3">{item.icon}</div>
                 <h2 className="text-xl font-semibold text-gray-400 ">
-                  <span className="text-white"> {item.span}</span>
+                  <span className="text-primary-gradient px-2">
+                    {" "}
+                    {item.span}
+                  </span>
                   {item.title}
                 </h2>
               </div>

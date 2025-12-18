@@ -64,31 +64,42 @@
       {
         "title": "Plug-and-Play API ",
         "span": "Integrate Nouf ",
+        "icon": "FaCodeFork",
         "desc": "in minutes, no complex setup. Works seamlessly with web and mobile apps instantly."
       },
       {
         "title": "Accurate Speech Recognition",
         "span": "Understands",
+        "icon": "IoIosPeople",
+
         "desc": "Arabic & English clearly for every customer"
       },
       {
         "title": "Intent-Based AI ",
         "span": "Recognizes ",
+        "icon": "LuBrain",
+
         "desc": "what users mean, not just the words they say"
       },
       {
         "title": "Enterprise-Grade Security",
         "span": "Protects",
+        "icon": "FaUnlockAlt",
+
         "desc": "user data with full encryption and compliance"
       },
       {
         "title": "Easy Customization",
         "span": "Integrate Nouf",
+        "icon": "AiOutlineGlobal",
+
         "desc": "in minutes, no complex setup. Works seamlessly with web and mobile apps instantly."
       },
       {
         "title": "Scalable & Reliable",
         "span": "Track",
+        "icon": "SiGoogleanalytics",
+
         "desc": "interactions, engagement, and conversions easily"
       }
     ]

@@ -7,7 +7,7 @@ export default function Pricing() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-3/4 mx-auto">
+      <div id="testimonials" className="w-3/4 mx-auto">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-[#19719D] to-[#092837] bg-clip-text text-transparent">
           {t("pricing.title")}
         </h2>{" "}

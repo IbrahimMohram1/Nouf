@@ -5,6 +5,8 @@ import { FaRegMessage } from "react-icons/fa6";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { LuPackage } from "react-icons/lu";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
 const savedLng = localStorage.getItem("language") || "en";
 
 export default function HowWork() {
@@ -43,7 +45,7 @@ export default function HowWork() {
   ];
 
   return (
-    <div className="min-h-screen text-white py-20 px-4">
+    <div id="about" className="min-h-screen text-white py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-primary-gradient">
@@ -66,52 +68,75 @@ export default function HowWork() {
                     {isEven ? (
                       <>
                         {/* Icon  of Left Side */}
-                        <div className="w-1/2 pr-8 flex justify-center ">
-                          <div className="icon-gradient text-3xl">
-                            {item.icon}
+                        <motion.div
+                          className="w-1/2 pr-8 flex justify-center "
+                          initial={{ opacity: 0, y: 60 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: false }} // يشتغل مرة واحدة
+                          transition={{ duration: 0.6 }}
+                        >
+                          <div>
+                            <div className="icon-gradient text-3xl">
+                              {item.icon}
+                            </div>
                           </div>
-                        </div>
+                        </motion.div>
 
                         {/* Content Card on Right */}
-                        <div
+                        <motion.div
                           className={`w-1/2 ${
-                            savedLng === "ar" ? "ps-8" : "pl-8"
+                            savedLng === "ar" ? "pr-12" : "pl-12"
                           }`}
+                          initial={{ opacity: 0, y: 60 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: false }} // يشتغل مرة واحدة
+                          transition={{ duration: 0.6 }}
                         >
-                          <h3 className="text-xl font-bold text-white mb-2">
-                            {item.title}
-                          </h3>
-                          <p className="text-slate-400 text-sm">
-                            {item.description}
-                          </p>
-                        </div>
+                          <div>
+                            <p className="bg-[#19719d] text-black my-2  text-center flex items-center justify-center  w-8 h-8 rounded-full">
+                              {index + 1}
+                            </p>
+                            <h3 className="text-xl font-bold text-white mb-2">
+                              {item.title}
+                            </h3>
+                            <p className="text-slate-400 text-sm">
+                              {item.description}
+                            </p>
+                          </div>
+                        </motion.div>
                       </>
                     ) : (
                       <>
                         {/* Content Card on Left */}
-                        <div
+                        <motion.div
                           className={`w-1/2 ${
-                            savedLng === "ar" ? "pe-8" : "pl-8"
+                            savedLng === "ar" ? "pe-12" : "pl-12"
                           }`}
+                          initial={{ opacity: 0, y: 60 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }} // يشتغل مرة واحدة
+                          transition={{ duration: 0.6 }}
                         >
+                          <p className="bg-[#19719d] text-black my-2  text-center flex items-center justify-center  w-8 h-8 rounded-full">
+                            {index + 1}
+                          </p>
                           <h3 className="text-xl font-bold text-white mb-2">
                             {item.title}
                           </h3>
                           <p className="text-sm ">{item.description}</p>
-                        </div>
-
+                        </motion.div>
                         {/* Icon  of Right Side */}
-                        <div
+                        <motion.div
                           className={`w-1/2 ${
-                            savedLng === "ar" ? "ps-8" : "pl-8"
+                            savedLng === "ar" ? "ps-6" : "pl-8"
                           }`}
                         >
-                          <div>
+                          <div className="flex justify-center">
                             <div className=" icon-gradient text-3xl">
                               {item.icon}
                             </div>
                           </div>
-                        </div>
+                        </motion.div>
                       </>
                     )}
                   </div>

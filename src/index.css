@@ -52,3 +52,7 @@ body {
 .icon-gradient {
   color: #19719d;
 }
+
+html {
+  scroll-behavior: smooth;
+}
